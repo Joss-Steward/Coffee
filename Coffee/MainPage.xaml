@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="0,0,0,0">
+            <TextBlock Text="COFFEE" FontSize="40" />
+            <TextBlock TextWrapping="Wrap" Text="Coffee good. Coffee great. Coffee make happy. Happy make coffee."/>
+            <TextBlock TextWrapping="Wrap" Text="Coffee coffee coffee coffee coffee."/>
+        </StackPanel>
 
     </Grid>
 </Page>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="commandSet_en-us">
+    <CommandPrefix> Coffee </CommandPrefix>
+    <Example> Make me a cup of Coffee</Example>
+    
+    <Command Name="makeMeCoffeeBitch">
+      <Example> Brew me some coffee </Example>
+      <ListenFor RequireAppName="ExplicitlySpecified"> make me [some] [a cup of] {builtin:AppName} </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> brew me [some] [a cup of] {builtin:AppName} </ListenFor>
+      <Feedback> Make your own damn coffee, Bitch </Feedback>
+      <VoiceCommandService Target="CoffeeVoiceService"/>
+    </Command>
+  </CommandSet>
+
+  <!-- Other CommandSets for other languages -->
+
+</VoiceCommands>
