@@ -72,9 +72,9 @@ namespace Coffee.VoiceCommands
 
             Random rand = new Random();
             String responseText = "Make your own damn coffee you "
-                + firstPart[rand.Next(0, firstPart.Length)] + " "
-                + secondPart[rand.Next(0, secondPart.Length)] + " "
-                + thirdPart[rand.Next(0, thirdPart.Length)] + "!";
+                + firstPart[rand.Next(0, firstPart.Length - 1)] + " "
+                + secondPart[rand.Next(0, secondPart.Length - 1)] + " "
+                + thirdPart[rand.Next(0, thirdPart.Length - 1)] + "!";
 
             var userMessage = new VoiceCommandUserMessage();
             userMessage.DisplayMessage = responseText;
